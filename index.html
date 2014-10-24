@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Petite Agenda</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+    <div class="header_section">
+      <a href="#"><img src="/assets/images/theme_night_owl.png" alt="Petite Agenda Logo"/></a>
+      <h1>Petite Agenda</h1>
+      <div class="username">Login</div>
+    </div>
+  </header>
+
+
+  <!-- Start of the middle section -->
+  <div class="container">
+    <div class="board_section">
+      <div class="tab_area">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active"><a href="#">My activities</a></li>
+          <li><a href="#">Explore（coming soon)</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-star glyphicon-star-filled"></span> Starred</a></li>
+        </ul>
+      </div>
+      <div class="board_area">
+        <!-- 1st board starts here: -->
+        <div class="board activity_board board_1">
+          <div class="board_title">
+            <input type="text" class="board_title_input" placeholder="Add activity..."><span class="glyphicon glyphicon-edit"></span>
+          </div>
+          <div class="datetime_picker">
+            <input type="text" class="board_date_input" placeholder="Oct/25">
+            <input type="text" class="board_time_start_input" placeholder="10:00"> to
+            <input type="text" class="board_time_end_input" placeholder="11:30">
+          </div>
+          <div class="board_note">
+            <textarea name="textarea_note" class="board_note_input" rows="3" placeholder="Note"></textarea>
+          </div>
+          <div class="board_bottom">
+            <span class="glyphicon glyphicon-star glyphicon-star-empty "></span> Drag or double click
+          </div>
+        </div>
+        <!-- 1st board ends above -->
+
+        <!-- 2nd board starts here: -->
+        <div class="board board_2 task_board">
+          <div class="board_title">
+            <input type="text" class="board_title_input" placeholder="Add task..."><span class="glyphicon glyphicon-edit"></span>
+          </div>
+          <div class="datetime_picker">
+            <input type="text" class="date_input" placeholder="Oct/25"> * Optional
+          </div>
+          <div class="board_note">
+            <textarea name="textarea_note" class="board_note_input" rows="3" placeholder="Note"></textarea>
+          </div>
+          <div class="board_bottom">
+            <span class="glyphicon glyphicon-star glyphicon-star-empty "></span> Drag or double click
+          </div>
+        </div>
+        <!-- 2nd board ends above -->
+        <!-- 3rd board starts here: -->
+        <div class="board board_3 activity_board board_exercise_default">
+          <div class="board_title">
+            <input type="text" class="board_title_input" placeholder="Exercise">
+          </div>
+          <div class="datetime_picker">
+            <input type="text" class="board_date_input" placeholder="Oct/25">
+            <input type="text" class="board_time_start_input" placeholder="10:00"> to
+            <input type="text" class="board_time_end_input" placeholder="11:30">
+          </div>
+          <div class="board_note">
+            <textarea name="textarea_note" class="board_note_input" rows="3" placeholder="Note"></textarea>
+          </div>
+          <div class="board_bottom">
+            <span class="glyphicon glyphicon-star glyphicon-star-filled"></span> Drag or double click
+          </div>
+        </div>
+        <!-- 3rd board ends above -->
+        <!-- 4th board starts here: -->
+        <div class="board board_4 activity_board board_homework_default">
+          <div class="board_title">
+            <input type="text" class="board_title_input" placeholder="Homework">
+          </div>
+          <div class="datetime_picker">
+            <input type="text" class="board_date_input" placeholder="Oct/25">
+            <input type="text" class="board_time_start_input" placeholder="10:00"> to
+            <input type="text" class="board_time_end_input" placeholder="11:30">
+          </div>
+          <div class="board_note">
+            <textarea name="textarea_note" class="board_note_input" rows="3" placeholder="Note"></textarea>
+          </div>
+          <div class="board_bottom">
+            <span class="glyphicon glyphicon-star glyphicon-star-filled"></span> Drag or double click
+          </div>
+        </div>
+        <!-- 4th board ends above -->
+        <!-- 5th board starts here -->
+        <div class="board board_5 activity_board board_playtime_default">
+          <div class="board_title">
+            <input type="text" class="board_title_input" placeholder="Playtime">
+          </div>
+          <div class="datetime_picker">
+            <input type="text" class="board_date_input" placeholder="Oct/25">
+            <input type="text" class="board_time_start_input" placeholder="10:00"> to
+            <input type="text" class="board_time_end_input" placeholder="11:30">
+          </div>
+          <div class="board_note">
+            <textarea name="textarea_note" class="board_note_input" rows="3" placeholder="Note"></textarea>
+          </div>
+          <div class="board_bottom">
+            <span class="glyphicon glyphicon-star glyphicon-star-filled"></span> Drag or double click
+          </div>
+        </div>
+        <!-- 5th board ends above -->
+        <!-- A board starts here: -->
+<!--         <div class="board">
+          <div class="board_title">
+            <input type="text" class="board_title_input" placeholder="Add appointment...">
+          </div>
+          <div class="datetime_picker">
+            <input type="text" class="board_date_input" placeholder="Oct/25">
+            <input type="text" class="board_time_start_input" placeholder="10:00">
+            <input type="text" class="board_time_end_input" placeholder="11:30">
+          </div>
+          <div class="board_note">
+            <textarea name="textarea_note" class="board_note_input" rows="3" pl</textarea>aceholder="Note">
+          </div>
+          <div class="board_bottom">
+            <span class="glyphicon glyphicon-star"></span>Drag or double click
+          </div>
+        </div>
+        <!== A board ends above -->
+      </div>
+    </div>
+
+
+
+
+
+    <div class="calendar_section">
+      <div class="table_container">
+        <div class="calendar_header">
+          <table>
+            <tr>
+              <td class="pivot_cell"></td>
+              <td class="calendar_header_cell_left"><span class="glyphicon glyphicon-chevron-left"></span>Sat 10/25</td>
+              <td>Sun 10/26<span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="glyphicon glyphicon glyphicon-calendar"></span></td>
+            </tr>
+          </table>
+        </div>
+        <!-- End of calendar header -->
+
+        <div class="calendar_body">
+          <table>
+            <tr>
+              <td class="col-1 col_time row_hr">0:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">1:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">2:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">3:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">4:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">5:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">6:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">7:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">8:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">9:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">10:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">11:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">12:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">13:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">14:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">15:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">16:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">17:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">18:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">19:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">20:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">21:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">22:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_hr">23:00</td>
+              <td class="col-2 row_hr"></td>
+              <td class="col-3 row_hr"></td>
+            </tr>
+            <tr>
+              <td class="col-1 col_time row_half"></td>
+              <td class="col-2 row_half"></td>
+              <td class="col-3 row_half"></td>
+            </tr>
+          </table>
+        </div>
+        <!-- End of calendar body -->
+
+        <div class="tasks_section">
+          <div class="tasks_rowhead">Tasks</div>
+          <div class="tasks_table">
+            <table>
+              <tr>
+                <td class="col-2"></td>
+                <td class="col-3"></td>
+              </tr>
+              <tr>
+                <td class="col-2"></td>
+                <td class="col-3"></td>
+              </tr>
+              <tr>
+                <td class="col-2"></td>
+                <td class="col-3"></td>
+              </tr>
+            </table>
+          </div>
+
+
+<!--             <tr>
+              <td>Tasks</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr> -->
+          </table>
+        </div>
+        <!-- End of tasks section -->
+      </div>
+    </div>
+  </div>
+  <!-- End of the middle section -->
+
+
+
+  <footer>
+    <ul>
+      <li>About Us</li>
+      <li>Contact Us</li>
+    </ul>
+
+  </footer>
+
+
+
+
+
+
+</body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</html>

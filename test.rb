@@ -1,0 +1,33 @@
+filename = ARGV.first
+
+txt = open(filename, 'w')
+txt.truncate(0)
+
+for i in 0..23
+  txt.write("<tr>")
+  txt.write("\n")
+  txt.write("\t")
+  txt.write("<td>0#{i}:00</td>")
+  txt.write("\n")
+  txt.write("\t")
+  txt.write("<td></td>")
+  txt.write("\n")
+  txt.write("\t")
+  txt.write("<td></td>")
+  txt.write("\n")
+  txt.write("</tr>")
+  txt.write("\n")
+  txt.write("<tr>")
+  txt.write("\n")
+  txt.write("\t")
+  txt.write("<td></td>")
+  txt.write("\n")
+  txt.write("\t")
+  txt.write("<td></td>")
+  txt.write("\n")
+  txt.write("\t")
+  txt.write("<td></td>")
+  txt.write("\n")
+  txt.write("</tr>")
+  txt.write("\n")
+end
